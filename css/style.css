@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+div.espaco{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-image: url('../img/espaco.jpg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+div.terra{
+	width: 350px;
+	height: 350px;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+	background-image: url('../img/terra.jpeg');
+	animation: girarTerrar 6s infinite linear;
+	box-shadow:-43px -1px 10px 10px rgb(0 0 0 / 35%) inset;
+}
+
+div.overlay{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: -68px 2px 35px 36px rgb(0 0 0 / 50%) inset;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@-webkit-keyframes girarTerrar{
+	from{background-position:500px center;}
+	to{background-position:-500px center;}	
+}
+
+
+@keyframes meteoro {
+	from{
+		position: absolute;
+		top: 0%;
+		right: 60%;
+	}
+
+	to{
+		position: absolute;
+		top: 30%;
+		right: 111%;
+	}
+	
+}
+
+@keyframes meteoro2 {
+	from{
+		position: absolute;
+		top: 80%;
+		right: 1%;
+	}
+
+	to{
+		position: absolute;
+		top: 70%;
+		right: 108%;
+	}
+	
+}
